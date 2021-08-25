@@ -13,7 +13,7 @@ header{
     right: 0;
     background:#fafafa;
     box-shadow: 0 5px 10px rgbs(0,0,0,.1);
-    padding: 15px 7%;
+    padding: 5px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,7 +52,7 @@ header .navbar ul li ul{
     background: #fff;
     display: none;
     padding-left: 0px;
-    max-height: 350px;
+    max-height: 350px; 
     overflow: auto;
 }
 header .navbar ul li ul li{
@@ -71,36 +71,61 @@ header label{
     cursor: pointer;
     display:none;
 }
-.phone{
-    margin: 5px;
+.cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url(images/bgi.jpg);
+     background-size: cover;
+    background-position: center;
 
 }
+.phone{
+    /* position: relative;
+    margin: 5px; */
+    z-index: 5;
+    position:fixed;
+    top:130px;
+    right:20px;
+    opacity: 0.9;
+}
 #ph{
-    /* position: fixed; */
+     /* z-index: 5;
+    position:fixed;
+    top:130px;
+    right:36px; */
     background: #007259;
     border: none;
+    /* opacity: 0.9;
+    border: none;  */
 }
 #ph:hover{
     color: #fff;
 }
-.cover{
-    min-height: 100vh;
-    background-image:linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url(images/bgi.jpg);
-    background-size: cover;
-    background-position: center;
-}
 .flex-container{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .flex-container img{
-    padding:50vh;
+    /* padding:50vh; */
+    width:350px;
+    height: 100%;
+    object-fit: cover;
 }
 .flex-container h3{
-    justify-content: center;
+    /* position: relative;
+    left:300px; */
     color: #007259;
 }
 #book{
+    /* position: relative;
+    top:80%;
+    justify-content: center; */
+    text-align: center;
     font-size: bolder;
     color: #fff;
     background: #007259;
@@ -111,7 +136,7 @@ header label{
     background: #fff;
     border-color: #007259;
 }
-.second{
+.welcome{
     position: center;
     height: 100vh;
     padding: 15% 7px;
@@ -125,36 +150,30 @@ button.btn.btn-secondary {
     min-width: 200px;
 }
 
-.second h1{
+.welcome h1{
     font-weight: 300;
     display: inline-block;
     border-bottom: #970202 solid;
 }
-.second h3{
+.welcome h3{
     padding:5% 3px;
     color: rgba(70, 61, 61, 0.541);
 }
 .flex-container2 {
+    height: 60vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
+}
 .about{
     width: 100%;
-    min-height: 100vh;
+    min-height: auto;
     background-color: rgb(0,0,0,.1);
 }
 .about h1{
     display: flex;
     justify-content: center;
-}
-/* .container{
-    width:80%;
-    text-align: center;
-    align-items: center;
-    margin-bottom: 10vh;
-    word-wrap: break-word;
-} */  
+}  
 .about .drhu{
     display: flex;
     flex-direction: column;
@@ -168,33 +187,14 @@ button.btn.btn-secondary {
     padding: 10px;
     background: #fff;  
 }
-/* .image-section{
-    width: 25%;
-    float:left;
-    padding: 35px;
-}
-.image-section img{
-    width: 242px;
-    height: 321px;
-    padding: 10px;
-    background: #fff;
-} */
-/* .content-section{
-    width: 55%;
-    float: right;
-} */
-.fourth{
+.services{
     width: 100%;
     min-height: 30vh;
     text-align: center;
     background-color: lavender;
 }
-.service{
-    display: flex;
-    justify-content: center;
-}
 #btncss{
-    width: 300px;
+    width: 240px;
     height: 50px;
     margin: 10px;
 }
@@ -202,13 +202,13 @@ button.btn.btn-secondary {
     color: #000;
     background-color: #fff;
 }
-.fifth{
+.staff{
     width: 100%;
-    min-height: 100vh;
+    min-height: 150vh;
     text-align: center;
     background-color: rgba(0,0,0,.1);
 }
-.fifth h1{
+.staff h1{
     padding: 10vh;
 }
 .container2 {
@@ -255,17 +255,6 @@ button.btn.btn-secondary {
     transform: scale(1.03);
     transition: all 1s ease;
 }
-/* .col-sm img{
-    height: 220px;
-    width: 220px;
-    border:none;
-    border-radius: 12.5px;
-} */
-/* .col-sm img:hover{
-    height: 240px;
-    width: 240px;
-    transition: .8s;
-} */
 .parallax{
     background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(images/philosophy.jpg);
     min-height: 500px;
@@ -278,6 +267,7 @@ button.btn.btn-secondary {
     position: center, fixed;
     color: #fff;
     letter-spacing: 1em;
+    padding: 10vh;
     text-align: center;
 }
 .inner p{
@@ -286,19 +276,20 @@ button.btn.btn-secondary {
     display: flex;
     text-align: center;
     padding: 10px;
+    /* min-height: 315px; */
     border: solid 1px;
     margin: 20px auto;
     border-radius: 20px;
     width: 50%;
     justify-content: center;
 }
-.sixth{
+.insurance{
     width: 100%;
     min-height: 70vh;
     text-align: center;
     background-color: lavender;
 }
-.sixth h6{
+.insurance h6{
     color: gray;
 }
 .container3{
@@ -340,7 +331,8 @@ button.btn.btn-secondary {
 .humana{
     background: url(images/humana.png);
 }
-.seven{
+.map{
+    padding:10px;
     width:100%;
     min-height: 50vh;
     background-color: rgba(0,0,0,.1);
@@ -372,7 +364,7 @@ button.btn.btn-secondary {
 
 
 
-@media(max-width:991px){
+@media(max-width:1125px){
 header{
     padding:20px;
 }
@@ -386,7 +378,7 @@ header .navbar{
     right: 0;
     background: #fff;
     border-top: 1px solid rgba(0,0,0,.1);
-    display: none;
+    
 }
 header .navbar ul li{
     width:100%;
@@ -395,15 +387,10 @@ header .navbar ul li ul{
     position: relative;
     width: 100%;
 }
-header .navbar ul li ul li{
+header .navbar ul li ul li ul{
     background: #eee;
 }
 #menu-bar:checked ~ .navbar{
     display: initial;
-}
-.flex-container img{
-    display: none;
-    width: 643px;
-    height: 437px;
 }
 }
