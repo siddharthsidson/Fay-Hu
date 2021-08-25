@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hina Mincho', serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+header{
+    position:center;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    background:#fafafa;
+    box-shadow: 0 5px 10px rgbs(0,0,0,.1);
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo{
+    font-weight: bolder;
+    font-size: 25px;
+    color: #333;
+    text-decoration: none;
+}
+header .navbar ul{
+    list-style: none;
+    font-weight: bolder;
+    ;
+}
+header .navbar ul li{
+    position: relative;
+    float: left;   
+}
+header .navbar ul li a{
+    font-size: 15px;
+    padding: 15px;
+    color:#333;
+    display: block;
+    text-decoration: none;
+}
+header .navbar ul li a:hover{
+    background: #333;
+    color: #fff;
+}
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+    padding-left: 0px;
+    max-height: 350px;
+    overflow: auto;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 15px;
+    color: #333;
+    cursor: pointer;
+    display:none;
+}
+.phone{
+    margin: 5px;
+
+}
+#ph{
+    /* position: fixed; */
+    background: #007259;
+    border: none;
+}
+#ph:hover{
+    color: #fff;
+}
+.cover{
+    min-height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url(images/bgi.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+.flex-container img{
+    padding:50vh;
+}
+.flex-container h3{
+    justify-content: center;
+    color: #007259;
+}
+#book{
+    font-size: bolder;
+    color: #fff;
+    background: #007259;
+    border-color: #fff;
+}
+#book:hover{
+    color: #007259;
+    background: #fff;
+    border-color: #007259;
+}
+.second{
+    position: center;
+    height: 100vh;
+    padding: 15% 7px;
+    top: 10px;
+    bottom: 15px;
+    text-align: center;
+    background-color: lavender;
+}
+
+button.btn.btn-secondary {
+    min-width: 200px;
+}
+
+.second h1{
+    font-weight: 300;
+    display: inline-block;
+    border-bottom: #970202 solid;
+}
+.second h3{
+    padding:5% 3px;
+    color: rgba(70, 61, 61, 0.541);
+}
+.flex-container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+.about{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(0,0,0,.1);
+}
+.about h1{
+    display: flex;
+    justify-content: center;
+}
+/* .container{
+    width:80%;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10vh;
+    word-wrap: break-word;
+} */  
+.about .drhu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container col{
+    width:40px;
+}
+.col-sm img{
+    padding: 10px;
+    background: #fff;  
+}
+/* .image-section{
+    width: 25%;
+    float:left;
+    padding: 35px;
+}
+.image-section img{
+    width: 242px;
+    height: 321px;
+    padding: 10px;
+    background: #fff;
+} */
+/* .content-section{
+    width: 55%;
+    float: right;
+} */
+.fourth{
+    width: 100%;
+    min-height: 30vh;
+    text-align: center;
+    background-color: lavender;
+}
+.service{
+    display: flex;
+    justify-content: center;
+}
+#btncss{
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+}
+#btncss:hover{
+    color: #000;
+    background-color: #fff;
+}
+.fifth{
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    background-color: rgba(0,0,0,.1);
+}
+.fifth h1{
+    padding: 10vh;
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    background:white;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+}
+.card-image {
+    height: 250px;
+    margin-bottom: 15px;
+    background-size: cover !important;
+}
+.volanta{
+    background: url(images/volanta.webp);
+}
+.ashley{
+    background: url(images/ashley.webp);
+}
+.denise{
+    background: url(images/denise.webp);
+}
+.julia{
+    background: url(images/julia.webp);
+}
+.iris{
+    background: url(images/iris.webp);
+}
+.anna{
+    background: url(images/anna.webp);
+}
+.lihong{
+    background: url(images/lihong.webp);
+}
+.card:hover{
+    background-color: rgb(114, 105, 105);
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+/* .col-sm img{
+    height: 220px;
+    width: 220px;
+    border:none;
+    border-radius: 12.5px;
+} */
+/* .col-sm img:hover{
+    height: 240px;
+    width: 240px;
+    transition: .8s;
+} */
+.parallax{
+    background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(images/philosophy.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax h2{
+    position: center, fixed;
+    color: #fff;
+    letter-spacing: 1em;
+    text-align: center;
+}
+.inner p{
+    position: center;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    border: solid 1px;
+    margin: 20px auto;
+    border-radius: 20px;
+    width: 50%;
+    justify-content: center;
+}
+.sixth{
+    width: 100%;
+    min-height: 70vh;
+    text-align: center;
+    background-color: lavender;
+}
+.sixth h6{
+    color: gray;
+}
+.container3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.box{
+    background:white;
+    width: 64px;
+    margin: 10px;
+    border-radius: 1px;
+    text-align: center;
+}
+.ilogo{
+    height: 38px;
+    margin-bottom: 15px;
+    background-size: cover !important;
+    border-radius: 1px;
+}
+.aetna{
+    background: url(images/aetna.png);
+}
+.assurant{
+    background: url(images/assurant.jpg);
+}
+.bluecross{
+    background: url(images/bluecross.png);
+}
+.cigna{
+    background: url(images/cigna.png);
+}
+.deltadental{
+    background: url(images/deltadental.png);
+}
+.guardian{
+    background: url(images/guardian.png);
+}
+.humana{
+    background: url(images/humana.png);
+}
+.seven{
+    width:100%;
+    min-height: 50vh;
+    background-color: rgba(0,0,0,.1);
+}
+.footer1{
+    width: 100%;
+    min-height: 15vh;
+    background-color: lavender;
+    text-align: center;
+}
+.footer1 a{
+    color: rgb(53, 50, 49);
+}
+.footer{
+    width: 100%;
+    min-height: 5vh;
+    padding: 1vh;
+    background-color: rgb(31, 184, 245);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+header{
+    padding:20px;
+}
+header label{
+    display: initial;
+}
+header .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid rgba(0,0,0,.1);
+    display: none;
+}
+header .navbar ul li{
+    width:100%;
+}
+header .navbar ul li ul{
+    position: relative;
+    width: 100%;
+}
+header .navbar ul li ul li{
+    background: #eee;
+}
+#menu-bar:checked ~ .navbar{
+    display: initial;
+}
+.flex-container img{
+    display: none;
+    width: 643px;
+    height: 437px;
+}
+}
