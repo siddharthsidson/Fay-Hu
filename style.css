@@ -7,7 +7,7 @@
     text-decoration: none;
 }
 header{
-    position:center;
+    position:relative;
     top: 0; 
     left: 0; 
     right: 0;
@@ -19,11 +19,13 @@ header{
     justify-content: space-between;
     z-index: 1000;
 }
-header .logo{
-    font-weight: bolder;
+header .logo img{
+    max-width: 200px;
+    object-fit: cover;
+    /* font-weight: bolder;
     font-size: 25px;
     color: #333;
-    text-decoration: none;
+    text-decoration: none; */
 }
 header .navbar ul{
     list-style: none;
@@ -87,8 +89,8 @@ header label{
     margin: 5px; */
     z-index: 5;
     position:fixed;
-    top:130px;
-    right:20px;
+    top: 136px;
+    right: 55px;
     opacity: 0.9;
 }
 #ph{
@@ -184,6 +186,8 @@ button.btn.btn-secondary {
     width:40px;
 }
 .col-sm img{
+    
+    text-align: center;
     padding: 10px;
     background: #fff;  
 }
@@ -378,7 +382,7 @@ header .navbar{
     right: 0;
     background: #fff;
     border-top: 1px solid rgba(0,0,0,.1);
-    
+    display: none;
 }
 header .navbar ul li{
     width:100%;
