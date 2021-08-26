@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: 'Hina Mincho', serif;
     text-transform: capitalize;
-    text-decoration: none;
+    text-decoration: none; 
+}
+.body{
+    width: 100%;
 }
 header{
     position:relative;
