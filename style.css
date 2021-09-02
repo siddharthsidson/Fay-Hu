@@ -26,10 +26,6 @@ header{
 header .logo img{
     max-width: 200px;
     object-fit: cover;
-    /* font-weight: bolder;
-    font-size: 25px;
-    color: #333;
-    text-decoration: none; */
 }
 header .navbar ul{
     list-style: none;
@@ -89,23 +85,15 @@ header label{
 
 }
 .phone{
-    /* position: relative;
-    margin: 5px; */
     z-index: 5;
     position:fixed;
-    top: 136px;
-    right: 56px;
+    top: 125px;
+    right: 15px;
     opacity: 0.9;
 }
 #ph{
-     /* z-index: 5;
-    position:fixed;
-    top:130px;
-    right:36px; */
     background: #007259;
     border: none;
-    /* opacity: 0.9;
-    border: none;  */
 }
 #ph:hover{
     color: #fff;
@@ -117,20 +105,14 @@ header label{
     align-items: center;
 }
 .flex-container img{
-    /* padding:50vh; */
     width:350px;
     height: 100%;
     object-fit: cover;
 }
 .flex-container h3{
-    /* position: relative;
-    left:300px; */
     color: #007259;
 }
 #book{
-    /* position: relative;
-    top:80%;
-    justify-content: center; */
     text-align: center;
     font-size: bolder;
     color: #fff;
@@ -284,7 +266,6 @@ button.btn.btn-secondary {
     display: flex;
     text-align: center;
     padding: 10px;
-    /* min-height: 315px; */
     border: solid 1px;
     margin: 20px auto;
     border-radius: 20px;
