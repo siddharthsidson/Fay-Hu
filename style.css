@@ -80,9 +80,8 @@ header label{
     flex-direction: column;
     min-height: 100vh;
     background-image:linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url(images/bgi.jpg);
-     background-size: cover;
+    background-size: cover;
     background-position: center;
-
 }
 .phone{
     z-index: 5;
@@ -172,7 +171,6 @@ button.btn.btn-secondary {
     width:40px;
 }
 .col-sm img{
-    
     text-align: center;
     padding: 10px;
     background: #fff;  
@@ -368,6 +366,8 @@ header .navbar{
     background: #fff;
     border-top: 1px solid rgba(0,0,0,.1);
     display: none;
+    max-height: 480px;
+    overflow-y: scroll;
 }
 header .navbar ul li{
     width:100%;
